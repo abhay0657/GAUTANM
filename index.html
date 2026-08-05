@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+
+<title>Gautam jha</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html,body{
+height:100%;
+overflow:hidden;
+}
+
+body{
+
+background:url("https://i.ibb.co/LzVkZXmJ/8b9cbc47-3199-4127-a355-fe3516ed593b.jpg") center center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+min-height:100dvh;
+
+}
+
+body::before{
+
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.65);
+backdrop-filter:blur(3px);
+
+}
+
+.card{
+
+position:relative;
+z-index:2;
+
+width:min(380px,92vw);
+
+max-height:96dvh;
+
+background:rgba(25,25,25,.82);
+
+backdrop-filter:blur(12px);
+
+border-radius:24px;
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 0 35px rgba(0,0,0,.45);
+
+padding:18px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-between;
+
+}
+
+.profile{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+border:1px solid #fff;
+object-fit:cover;
+
+}
+
+h1{
+
+margin-top:10px;
+
+color:#fff;
+
+text-align:center;
+
+font-size:clamp(22px,4vw,34px);
+
+font-weight:800;
+
+line-height:1.2;
+
+}
+
+.subtitle{
+
+margin-top:8px;
+
+color:#27d8ff;
+
+font-size:clamp(12px,2vw,15px);
+
+text-align:center;
+
+}
+
+.badge{
+
+margin:14px 0;
+
+background:linear-gradient(90deg,#ff6500,#ff9300);
+
+padding:8px 18px;
+
+border-radius:40px;
+
+color:white;
+
+font-size:13px;
+
+font-weight:700;
+
+}
+
+.timer{
+
+color:#ffd43b;
+
+font-size:18px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.telegram{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+text-decoration:none;
+
+background:linear-gradient(90deg,#09c6ff,#00a8ff);
+
+padding:15px;
+
+border-radius:16px;
+
+color:white;
+
+font-size:18px;
+
+font-weight:700;
+
+box-shadow:0 0 20px rgba(0,174,255,.45);
+
+transition:.3s;
+
+}
+
+.telegram:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 35px rgba(0,174,255,.9);
+
+}
+
+.features{
+
+width:100%;
+
+margin-top:18px;
+
+}
+
+.features div{
+
+padding:8px 0;
+
+color:white;
+
+font-size:15px;
+
+}
+
+footer{
+
+margin-top:10px;
+
+font-size:11px;
+
+color:#9c9c9c;
+
+text-align:center;
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-height:720px){
+
+.profile{
+width:120px;
+height:120px;
+}
+
+h1{
+font-size:24px;
+}
+
+.subtitle{
+font-size:12px;
+}
+
+.badge{
+font-size:11px;
+padding:6px 14px;
+margin:10px 0;
+}
+
+.timer{
+font-size:15px;
+margin-bottom:10px;
+}
+
+.telegram{
+padding:12px;
+font-size:16px;
+}
+
+.features div{
+font-size:13px;
+padding:6px 0;
+}
+
+footer{
+font-size:10px;
+}
+
+.card{
+padding:15px;
+}
+
+}
+
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '15973229112754');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1597322911821754&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="https://i.ibb.co/HfYCSxkJ/images-2.jpg" class="profile">
+
+<h1>Gautam jha / Stock Learners</h1>
+
+<div class="subtitle">
+📈 Daily Market Updates & Trading Education
+</div>
+
+<div class="badge">
+🏆 15+ Years Trading Experience
+</div>
+
+<div class="timer">
+⏰ Offer Ends In :
+<span id="time">01:00</span>
+</div>
+
+<a href="https://t.me/+8jfz4p_oYWcwYzg9" class="telegram">
+🚀 JOIN TELEGRAM CHANNEL
+</a>
+
+<div class="features">
+
+<div>📊 Live Market Analysis</div>
+
+<div>🔥 Premium Trading Setups</div>
+
+<div>⚡ Instant Alerts</div>
+
+<div>💎 Daily Educational Updates</div>
+
+</div>
+
+<footer>
+
+© 2026 Gautam jha / Stock Learners| All Rights Reserved
+
+</footer>
+
+</div>
+
+<script>
+
+let seconds=60;
+
+setInterval(()=>{
+
+let m=Math.floor(seconds/60);
+
+let s=seconds%60;
+
+document.getElementById("time").innerHTML=
+
+String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");
+
+if(seconds>0) seconds--;
+
+},1000);
+
+</script>
+
+</body>
+</html>
